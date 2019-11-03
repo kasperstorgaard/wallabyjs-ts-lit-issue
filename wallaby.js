@@ -4,7 +4,6 @@ module.exports = function (wallaby) {
   return {
     files: [
       'src/**/*.ts',
-      'node_modules/lit-html/lit-html.js',
       '!src/**/*.spec.ts'
     ],
     tests: [
@@ -17,7 +16,7 @@ module.exports = function (wallaby) {
       }
     },
     compilers: {
-      '**/*.(js|ts)': wallaby.compilers.babel(),
+      'src/**/*.(js|ts)': wallaby.compilers.babel(),
     },
     setup() {
       require('browser-env')();

@@ -1,6 +1,5 @@
 require('@babel/register')({
-  extensions: ['.ts', '.js'],
-	ignore: [/node_modules\/(?!lit-html)/, 'src/**/*.spec.ts']
+  extensions: ['.ts', '.js']
 });
 
 const browserEnv = require('browser-env');
