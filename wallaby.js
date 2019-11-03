@@ -17,13 +17,9 @@ module.exports = function (wallaby) {
       runner: 'node'
     },
     compilers: {
-      'src/**/*.ts': wallaby.compilers.babel(),
-      'node_modules/lit-html/lit-html.js': wallaby.compilers.babel()
+      '**/*.(ts|js)': wallaby.compilers.babel()
     },
     testFramework: 'ava',
-    debug: true,
-    setup() {
-      require('browser-env')();
-    }
+    debug: true
   };
 };
