@@ -8,7 +8,6 @@ module.exports = function (wallaby) {
       '!src/**/*.d.ts',
       '!src/**/*-model.ts',
       'node_modules/lit-html/lit-html.js'
-
     ],
     tests: [
       'src/**/*.spec.ts'
@@ -19,7 +18,7 @@ module.exports = function (wallaby) {
     },
     compilers: {
       'src/**/*.ts': wallaby.compilers.babel(),
-      'node_modules/lit-hmlt/lit-html.js': wallaby.compilers.babel()
+      'node_modules/lit-html/lit-html.js': wallaby.compilers.babel()
     },
     testFramework: 'ava',
     debug: true,
